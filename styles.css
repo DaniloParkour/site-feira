@@ -26,13 +26,15 @@ body {
   --number-fairgoers-columns: 3;
   --value-partner-columns: 2fr 1fr;
   --main-content-flex-direction: row;
+  --size-hero-image: 360px;
 }
 
 @media only screen and (max-width: 920px) {
   body {
-    --size-fairgoers-columns: 1;
+    --number-fairgoers-columns: 1;
     --value-partner-columns: 1fr;
     --main-content-flex-direction: column;
+    --size-hero-image: 280px;
   }
 }
 
@@ -144,7 +146,7 @@ body {
 }
 
 .content-main-image {
-  height: 22rem;
+  height: var(--size-hero-image);
 }
 
 .content-secondary {
