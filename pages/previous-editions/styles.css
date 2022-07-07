@@ -10,9 +10,6 @@
 body {
 
   --color-text: #f4c87d;
-  --color-main: #2F2325;
-  --color-main-dark: #543a1b;
-  --color-main-light: #78b467;
   --color-secondary-dark: #a45728;
   --color-secondary-light: #f4c87d;
   --color-secondary: #ECD6C4;
@@ -23,19 +20,6 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 
-  --number-fairgoers-columns: 3;
-  --value-partner-columns: 2fr 1fr;
-  --main-content-flex-direction: row;
-  --size-hero-image: 360px;
-}
-
-@media only screen and (max-width: 920px) {
-  body {
-    --number-fairgoers-columns: 1;
-    --value-partner-columns: 1fr;
-    --main-content-flex-direction: column;
-    --size-hero-image: 280px;
-  }
 }
 
 .header {
@@ -66,87 +50,47 @@ body {
   font-size: 1.4em;
 }
 
-.fairgoers-list {
-  display: grid;
-  grid-template-columns: repeat(var(--number-fairgoers-columns), 1fr);
-  grid-gap: 1em;
-}
-
-.fairgoers-item {
-  color: var(--color-text);
-  display: flex;
-}
-
-.fairgoers-item-avatar {
-  border-radius: 100%;
-  height: 4em;
-  width: 4em;
-  margin-right: 0.5rem;
-}
-
-.fairgoers-item-text {
-  line-height: 1.2em;
-}
-
-.partners {
-  display: grid;
-  grid-template-columns: var(--value-partner-columns);
-  color: var(--color-text);
-  margin-top: 2em;
-  padding-top: 1em;
-  gap: 8rem;
-}
-
-.logo-apoio {
-  height: 6em;
-  margin-left: 1em;
-  margin-top: 2em;
-}
-
 .content {
   margin-top: 2em;
 }
 
-.content-partners {
-  margin-top: 1rem;
-}
-
-.content-map {
-  margin-top: 1rem;
-}
-
 .content-main {
   display: flex;
-  flex-direction: var(--main-content-flex-direction);
+  flex-direction: column;
   gap: 1em;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 3em;
   padding-right: 3em;
 }
 
 .content-main-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.content-main-text-title {
-  font-family: 'Righteous', cursive;
-  font-weight: 400;
-  font-size: 3em;
-  color: var(--color-text);
-}
-
-.content-main-text-subtitle {
   font-family: 'Sarala', sans-serif;
   font-weight: 400;
   font-size: 1.2em;
   color: var(--color-secondary);
+  text-align: justify;
+  max-width: 900px;
 }
 
-.content-main-image {
-  height: var(--size-hero-image);
+.business-list {
+  display: flex;
+  max-width: 900px;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  row-gap: 2em;
+  color: var(--color-secondary);
+}
+
+.content-main-text-title {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: var(--color-text);
+}
+
+.carousel {
+  width: 600px;
 }
 
 .content-secondary {
@@ -165,7 +109,6 @@ body {
   font-size: 24px;
   color: var(--color-text);
   margin-bottom: 16px;
-  text-align: center;
 }
 
 .footer {
