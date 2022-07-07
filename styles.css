@@ -8,14 +8,21 @@
 }
 
 body {
+
+  --color-text: #f4c87d;
+  --color-main: #2F2325;
+  --color-main-dark: #543a1b;
+  --color-main-light: #78b467;
+  --color-secondary-dark: #a45728;
+  --color-secondary-light: #f4c87d;
+  --color-secondary: #ECD6C4;
+  
+
   font-size: 100%;
-  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+  background: linear-gradient(68.15deg, #6e4524 16.62%, #a45728 85.61%);
   margin-left: 10px;
   margin-right: 10px;
 
-  --color-text: #FFF2E7;
-  --color-main: #2F2325;
-  --color-secondary: #ECD6C4;
   --number-fairgoers-columns: 3;
   --value-partner-columns: 2fr 1fr;
   --main-content-flex-direction: row;
